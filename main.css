@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure {
+  text-align: center;
+}
+
+header {
+  background-image: url("./obrazki/kosmos.jpg");
+  background-size:cover;
+}
+
+aside {
+  background-color: #2B7DC6;
+  border-radius: 12px;
+  box-shadow: 4px 4px 5px #38c6ff, 0px -4px 10px #38c6ff;
+}
+
+aside, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li, h1, h2, h3 {
+  text-align: center;
+}
+
+img {
+  overflow-x: auto;
+}
+
+th, td {
+  text-align: center;
+}
+
+main {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  background-color:#084C89;
+  border-radius: 0 0 12px 12px;
+  box-shadow: -0px 4px 10px #38c6ff, 0px -4px 10px #38c6ff;
+}
+
+nav a {
+  font-family: "Madimi One", sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 15px;
+  background-color:#084C89;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color:#055daa;
+  transition:700ms;
+  border-radius: 10px;
+  color: rgb(31, 31, 31);
+}
+
+nav div {
+  text-align: center;
+}
+
+div.rwd1 {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+div.rwd2 {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 150px auto;
+}
+
+blockquote{
+  font-style: italic;
+}
+
+table {  
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 2.5px solid rgb(1, 0, 70);
+  background-color: #0088ff7a;
+  font-size: 17px;
+}
+
+td {
+  height: 30px;
+}
+
+th {
+  width: 160px;
+}
+
+tr td {
+  font-size: 19px;
+}
+
+/* Czcionka Google Fonts:MadimiOne */
+header p {
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    color: whitesmoke;
+    padding: 60px;
+}
+
+aside a {
+  display: block;
+  padding: 12px;
+  background-color:#2B7DC6;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+aside a:hover{
+  background-color:#055daa;
+  transition:700ms;
+  border-radius: 12px;
+  color: rgb(31, 31, 31);
+}
+
+.button1 {
+  border-radius:12px 12px 0px 0px;
+}
+.button2 {
+  border-radius:0px 0px 12px 12px;
+}
+
+
+.header, div p{
+    text-align: center;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+nav li {
+  display: inline-block;
+}
+
+  .musk2 {
+    width: 20%;
+    height: 20%;
+    min-width: 60%;
+  }
+
+  .zip2 {
+    width: 20%;
+    height: 20%;
+    min-width: 40%;
+  }
+
+  .paypal {
+    width: 10%;
+    height: 10%;
+    min-width: 15%;
+    margin: 20px;
+  }
+
+  .x {
+    width: 10%;
+    height: 10%;
+    min-width: 15%;
+  }
+
+  .spacex {
+    width: 25%;
+    height: 25%;
+    min-width: 15%;
+  }
+
+footer {
+  margin-top: 10px;
+  background-color:#2B7DC6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: 0px -4px 10px #38c6ff;
+}
+
+/* Wersja do druku */
+@media print {
+  nav, header, footer{
+      display: none;
+  }
+  aside {
+    visibility: hidden;
+  }
+
+  div.rwd2 {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+/* Wersja na telefony */
+@media only screen and (max-width: 600px) {
+  div.rwd2 {
+    grid-template-columns: auto;
+  }
+}
